@@ -3,7 +3,7 @@
 <%= form_tag do %>
   <label><%= l('Warehouse') %></label>
   <%= select_tag(:warehouse, options_for_select(@warehouses,params[:warehouse]),{:onchange=>'submit();'}) %>
-  <input type='button' value='<%= l('export').capitalize %> CSV' onclick="location.href='/inventory/inventory_stock_xls?warehouse='+$('#warehouse').val()" />
+  <input type='button' value='<%= l('export').capitalize %> CSV' onclick="location.href= '<%= home_path() %>inventory/inventory_stock_xls?warehouse='+$('#warehouse').val()" />
 <% end %>
 <table id='inventory_stock' cellspacing='0' cellpadding='4' border='1' style='border: 1px solid black;font-size:10px;border-collapse:collapse;'>
   <tr>

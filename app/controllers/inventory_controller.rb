@@ -165,6 +165,8 @@ class InventoryController < ApplicationController
   
   def ajax_get_part_value
     out = ''
+    #Rails.logger.info "TEST1"
+    #Rails.logger.info params[:part_id]
     if params[:part_id]
       if part = InventoryPart.find(params[:part_id])
         out =  part.value.to_s
@@ -175,11 +177,14 @@ class InventoryController < ApplicationController
   
   def ajax_get_part_info
     out = []
+    #Rails.logger.info "TEST2"
+    #Rails.logger.info params[:part_number]
     if params[:part_number]
       if part = InventoryPart.where("part_number = '"+params[:part_number]+"'").first
         out =  part.to_json
       end
     end
+    #Rails.logger.info out
     render :json => out
   end
 
@@ -226,11 +231,13 @@ class InventoryController < ApplicationController
 
   def user_has_warehouse_permission(user_id, warehouse_id)
     if warehouse_id == nil
-      if InventoryWarehouse.count(:conditions => "user_manager_id = " + user_id.to_s) > 0
+      #if InventoryWarehouse.count(:conditions => "user_manager_id = " + user_id.to_s) > 0
+      if InventoryWarehouse.where(:user_manager_id => user_id).count > 0
         return true
       end
     else
-      if InventoryWarehouse.count(:conditions => ["user_manager_id = "+user_id.to_s+" and id = "+warehouse_id.to_s]) > 0
+      #if InventoryWarehouse.count(:conditions => ["user_manager_id = "+user_id.to_s+" and id = "+warehouse_id.to_s]) > 0
+      if InventoryWarehouse.where(:user_manager_id => user_id, :id => +warehouse_id).count > 0
         return true
       end
     end

@@ -17,9 +17,10 @@
 <script>
   function show_part_info(part_number)
   {
-		$.post("/inventory/ajax_get_part_info",{part_number:part_number})
+		$.post("<%= home_path() %>inventory/ajax_get_part_info",{part_number:part_number})
     	.done(function(data){
-      	alert(data.inventory_part.description);
+//      	alert(data.inventory_part.description);
+      	alert(data.description);
       });
   }
 </script>

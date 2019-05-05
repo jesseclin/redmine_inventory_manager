@@ -17,7 +17,7 @@
   
   function update_default_value(part_number_id)
   {
-  	$.post('/inventory/ajax_get_part_value',{part_id:part_number_id})
+  	$.post('<%= home_path() %>inventory/ajax_get_part_value',{part_id:part_number_id})
   		.done(function(data){
   			$('#inventory_in_movement_value').val(data);
   		});

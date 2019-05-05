@@ -1,0 +1,81 @@
+"zh-TW":
+  inventory: 庫存
+  reports: Reports
+  export: Export
+  field_identification: ID/EIN
+  field_name: Name
+  field_address0: Address
+  field_address1: Address 2
+  field_city: City
+  field_state: State
+  field_country: Country
+  field_phone0: Phone
+  field_phone1: 2nd Phone
+  field_fax: Fax
+  field_business: Industry/Activity
+  field_email: E-Mail
+  field_contact0: Contact
+  field_contact1: Contact 2
+  field_inventory_category: Category
+  field_manufacturer: Manufacturer/Branch
+  field_part_number: Product
+  field_inventory_part: Product
+  field_inventory_providor: Providor
+  field_quantity: Quantity
+  field_squantity: Qty
+  field_document: Document
+  field_document_type: Document Type
+  field_location: Location
+  field_user_from: User
+  field_warehouse_from: Warehouse
+  field_user_to: User
+  field_warehouse_to: Enter to Warehouse
+  field_serial_number: Serial Number
+  inventory_stock: 庫存
+  inventory_movements: 出入庫紀錄
+  inventory_parts: 零件設備
+  inventory_categories: 類別
+  inventory_warehouses: 庫房
+  inventory_providors: 供應商
+  inventory_manager: 實驗室管理
+  Edit: Edit
+  Create: 新建
+  Delete: Delete
+  Cancel: Cancel
+  input_movements: 入庫單
+  output_movements: 出庫單
+  User: 用戶
+  Project: 專案
+  Providor: 供應商
+  Warehouse: 庫房
+  Part: 零件設備
+  Category: 類別
+  all_warehouses: 所有庫房
+  delete_confirmation: Are you sure you want to DELETE the registry?
+  cant_delete_register: You can not delete the record. Probably should be related to anotherone
+  out_of_stock: There is enough stock to make the out movement.
+  field_where: Where is it kept?
+  field_user_manager: 實驗室管理員
+  permission_denied: You don't have permission to make changes on that Warehouse.
+  field_short_part_number: Product
+  From: From
+  To: To
+  Date: Date
+  out_movement_list: 出庫列表
+  in_movement_list: 入庫列表
+  part_comes_from: Product comes from
+  part_goes_to: Product is delivered to
+  inputs: 入庫
+  outputs: 出庫
+  stock: 庫存
+  last_movement: 最後出入庫時間
+  total: 總值 
+  inventory_value: 庫存值
+  voice: 發票
+  proforma-invoice: 型式發票
+  waybill: 提運單
+  ticket: 申請單
+  active: Active
+  obsolet: Obsolet
+  discontinued: Discontinued
+  inventory_inputs_document_report: In Movements w/Buying Documents
